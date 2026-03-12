@@ -30,7 +30,7 @@ classes.
 
 ### Starting the Local Database
 
-Starts the local instance of PostgreSQL in isolation
+Starts the local instance of PostgreSQL in isolation.
 
 `./gradlew composeUp`
 
