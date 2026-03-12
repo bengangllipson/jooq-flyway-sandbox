@@ -1,0 +1,11 @@
+services:
+  database:
+    image: postgres:18.3
+    environment:
+      - POSTGRES_DB=sandbox_db
+      - POSTGRES_USER=sandbox_user
+      - POSTGRES_PASSWORD=sandbox_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./tools/db/initialize:/docker-entrypoint-initdb.d
